@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { IconContext } from "react-icons";
 
-import {SiCodewars} from "react-icons/si";
 import {FaFacebookSquare, FaGithubSquare, FaLinkedin} from "react-icons/fa";
 
 

@@ -1,7 +1,5 @@
-import Head from 'next/head'
-import Navbar from "../components/Layout/Navbar";
-import ModalTerminal from "../components/Terminal/ModalTerminal";
-import AvatarHover from "../components/Avatar/AvatarHover";
+import ModalTerminal from "/components/Terminal/ModalTerminal";
+import AvatarHover from "/components/Avatar/AvatarHover";
 export default function Home() {
 
 

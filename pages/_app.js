@@ -1,8 +1,8 @@
 import React from 'react'
 import App from 'next/app'
 import { TerminalContextProvider } from "react-terminal";
-import '../styles/globals.css'
-import Layout from "../components/Layout/Layout";
+import '/styles/globals.css'
+import Layout from "/components/Layout/Layout";
 
 class MyApp extends App {
   render() {

@@ -2,8 +2,8 @@
 import React from "react";
 
 
-import Head from "./Head";
-import Navbar from "./Navbar";
+import Head from "/components/Layout/Head";
+import Navbar from "/components/Layout/Navbar";
 
 
 
