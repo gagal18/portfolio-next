@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialIcon from "/components/Social/SocialIcon";
+import SocialIcon from "../Social/SocialIcon";
 
 function Navbar(props) {
     return (
