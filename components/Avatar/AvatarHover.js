@@ -5,7 +5,7 @@ function AvatarHover(props) {
     const [mouseOver, setMouseOver] = useState(false)
 
     return (
-        <div className={"w-80"} onMouseEnter={() => setMouseOver(true)} onMouseLeave={() => setMouseOver(false)}>
+        <div className={"h-40 lg:h-max w-4/5 lg:w-80 scale-50 lg:scale-100"} onMouseEnter={() => setMouseOver(true)} onMouseLeave={() => setMouseOver(false)}>
             <Avatar
                 avatarStyle='Transparent'
                 topType='ShortHairShortFlat'

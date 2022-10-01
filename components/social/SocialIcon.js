@@ -32,12 +32,12 @@ function SocialIcon({icon}) {
         <div  className={'w-20 p-2 flex justify-center items-center'}>
         <a href={iconLink}>
         <div className={'text-4xl flex justify-center flex-col items-center w-full'} onMouseEnter={() => setMouseOver(true)} onMouseLeave={() => setMouseOver(false)}>
-            <IconContext.Provider value={{className: "custom-transition" }}>
+            <IconContext.Provider value={{className: "custom-transition duration-300" }}>
                 <div>
                     {iconRender}
                 </div>
             </IconContext.Provider>
-            <h3 className={`text-lg text-gray-400 custom-transition ${!mouseOver ? " opacity-0 max-h-0" : "opacity-100 max-h-12" }` }>{icon}</h3>
+            <h3 className={`text-lg text-gray-400 custom-transition duration-300 ${!mouseOver ? " opacity-0 max-h-0" : "opacity-100 max-h-12" }` }>{icon}</h3>
 
         </div>
         </a>
