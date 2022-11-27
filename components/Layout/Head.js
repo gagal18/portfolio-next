@@ -13,7 +13,7 @@ const HeadLinks = (props) => {
         <Head>
             <link rel="shortcut icon" href="/favicon.ico" />
             <meta name="theme-color" content="#ffffff" />
-            <title>Bojan's Portfolio</title>
+            <title>Bojan&apos;s Portfolio</title>
             <meta property="og:title" content={"Bojan's Portfolio"} />
             <meta property="og:url" content={href} />
             <meta property="og:type" content="website" />
