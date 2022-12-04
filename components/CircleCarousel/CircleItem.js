@@ -2,12 +2,11 @@ import React, {useState} from 'react';
 import { IconContext } from "react-icons";
 
 import {FaReact} from "react-icons/fa";
-import {SiGatsby, SiJavascript, SiNextdotjs, SiRedux, SiWordpress} from "react-icons/si";
+import {SiGatsby, SiJavascript, SiNextdotjs, SiRedux, SiWordpress, SiCplusplus, SiC} from "react-icons/si";
 import {GrWordpress} from "react-icons/gr";
 
 
 function CircleItem({icon, ...rest}) {
-    console.log(rest)
     const [mouseOver, setMouseOver] = useState(false)
     let iconRender
 
@@ -29,10 +28,14 @@ function CircleItem({icon, ...rest}) {
         }break;
         case "Gatsby": {
             iconRender = <SiGatsby color={mouseOver ? "#663399" :  "#663399"}/>
+        }break;        
+        case "CPP": {
+            iconRender = <SiCplusplus color={mouseOver ? "#00599C" :  "#00599C"}/>
         }break;
-        default:
-            console.log('epty')
-            break;
+        case "C": {
+            iconRender = <SiC color={mouseOver ? "#00599C" :  "#00599C"}/>
+        }break;
+
     }
     const mystyle = {
         transform: `rotate(${rest.deg}deg) translate(100px) rotate(-${rest.deg}deg)`

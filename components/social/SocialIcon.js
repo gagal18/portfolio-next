@@ -23,9 +23,6 @@ function SocialIcon({icon}) {
                 iconRender = <FaLinkedin color={mouseOver ? "#3987C8" :  "#a5a5a5"}/>
                 iconLink = 'https://www.linkedin.com/in/bojan-gagaleski-318922197'
             }break;
-            default:
-                console.log('epty')
-                break;
         }
 
     return (

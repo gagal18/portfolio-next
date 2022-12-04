@@ -5,13 +5,12 @@ function CircleCarousel({children, ...rest}) {
     useEffect(() => {
         const interval = setInterval(() => {
             setCount(count++)
-        }, 4000);
-
+        }, 2000);
         return () => clearInterval(interval);
     }, []);
     let degree = 360/children.length
     return (
-        <div className={`relative mt-28 lg:mt-40 -left-20 lg:left-unset lg:float-right`}>
+        <div className={`mt-60 lg:mt-40 -left-12 lg:-left-60 lg:left-unset absolute lg:relative`}>
             {React.Children.map(children, (child, i) => {
                 return React.cloneElement(child,{
                     deg: degree * i + count*degree
