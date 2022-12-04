@@ -20,7 +20,7 @@ body {
 }
 
 .custom-transition {
-  transition-property: color, max-height, width, padding, opacity, transform;
+  transition-property: visibility, color, max-height, width, padding, opacity, transform;
   transition-timing-function: linear;
 }
 
