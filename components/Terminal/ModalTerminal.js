@@ -2,11 +2,12 @@ import React from 'react';
 import {ReactTerminal} from "react-terminal";
 import TerminalChild from "/components/Terminal/TerminalChild";
 import {useRouter} from "next/router";
+import {useTheme} from "next-themes";
 
 
 function ModalTerminal(props) {
     const router = useRouter();
-
+    const { theme, setTheme } = useTheme()
     const error = {
         color: "red",
         fontWeight: "bold"
@@ -80,7 +81,7 @@ function ModalTerminal(props) {
         <span>
           Type <strong>guideme</strong> for command list
           <br/>
-            <span style={{fontSize: "12px"}}>hover on my avatar to WINK!</span>
+            <span style={{fontSize: "12px"}}>click on my glasses to go {theme == "light" ? "dark" : "light"}-mode</span>
           <br/>
         </span>
     );

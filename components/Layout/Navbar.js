@@ -10,7 +10,7 @@ function Navbar(props) {
 
   return (
     <>
-      <div className={"bg-black h-20 flex"}>
+      <div className={"h-20 flex bg-black"}>
         <div className={"hidden lg:flex w-4/5 mx-auto justify-between"}>
           <div className={"flex items-center"}>
             <img className={"w-12"} src={"/assets/icon.png"} />
@@ -47,7 +47,7 @@ function Navbar(props) {
         </div>
       </div>
       <div
-        className={`py-10 bg-black custom-transition duration-300 absolute z-50 w-full ${
+        className={`bg-black py-10 custom-transition duration-300 absolute z-50 w-full ${
           !toggleNavbar
             ? "invisible opacity-0 max-h-0"
             : "visible opacity-100 max-h-96"

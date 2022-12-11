@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import Avatar from "avataaars";
+import ToggleTheme from "../ToggleTheme/ToggleTheme";
+import {useTheme} from "next-themes";
 
 function AvatarHover(props) {
     const [mouseOver, setMouseOver] = useState(false)
 
     return (
+        <>
         <div className={"h-40 lg:h-max w-4/5 lg:w-80 scale-50 lg:scale-100"} onMouseEnter={() => setMouseOver(true)} onMouseLeave={() => setMouseOver(false)}>
             <Avatar
                 avatarStyle='Transparent'
@@ -19,7 +22,9 @@ function AvatarHover(props) {
                 mouthType={mouseOver ? 'Smile' : 'Twinkle'}
                 skinColor='Light'
             />
+            <ToggleTheme />
         </div>
+        </>
     );
 }
 
