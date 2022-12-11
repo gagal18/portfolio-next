@@ -4,7 +4,10 @@ import CircleItem from "/components/CircleCarousel/CircleItem";
 import CircleCarousel from "../components/CircleCarousel/CircleCarousel";
 import { TypeAnimation } from "react-type-animation";
 
-export default function Home() {
+import {GET_ALL_BLOG_POSTS} from "../gql/queries";
+import graphQLClient from "../gql/GraphQLClientToHYgraph";
+
+export default function Home({posts}) {
   return (
     <div className={"mx-auto w-4/5"}>
       <div className={"mt-5 flex justify-end w-2/3 float-right"}>
@@ -42,4 +45,13 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+    const posts = await graphQLClient.request(GET_ALL_BLOG_POSTS);
+    return {
+        props: {
+            posts,
+        },
+    }
 }
