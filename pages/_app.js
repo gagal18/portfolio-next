@@ -10,7 +10,7 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
     return(
-    <ThemeProvider attribute="class">
+    <ThemeProvider defaultTheme="dark" attribute="class">
       <TerminalContextProvider>
         <Layout><Component {...pageProps} /></Layout>
       </TerminalContextProvider>
