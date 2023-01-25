@@ -20,7 +20,7 @@ export default function Home() {
             1000,
             "I am a Computer Science student!",
             1000,
-            "I am a passionate about learning new things!",
+            "I am a passionate about learning new things!!!",
             1000,
           ]}
           wrapper="p"
