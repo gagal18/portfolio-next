@@ -3,7 +3,6 @@ import { IconContext } from "react-icons";
 
 import {FaReact} from "react-icons/fa";
 import {SiGatsby, SiJavascript, SiNextdotjs, SiRedux, SiWordpress, SiCplusplus, SiC} from "react-icons/si";
-import {GrWordpress} from "react-icons/gr";
 
 
 function CircleItem({icon, ...rest}) {
